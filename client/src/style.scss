@@ -1,0 +1,119 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$mainLayoutColor: #ffffff;
+$dark: #2c3e50;
+
+$primary: #13cfed;
+$danger: #e74c3c;
+$success: #27ae60;
+$warning: #f39c12;
+$secondary: #616a6b;
+
+body {
+    background-color: #f2f3f4;
+}
+
+.bg,
+.btn,
+.badge {
+    &-primary {
+        background-color: $primary !important;
+    }
+
+    &-secondary {
+        background-color: $secondary !important;
+    }
+
+    &-danger {
+        background-color: $danger !important;
+    }
+
+    &-success {
+        background-color: $success !important;
+    }
+
+    &-warning {
+        background-color: $warning !important;
+    }
+}
+
+.text {
+    &-primary {
+        color: $primary !important;
+    }
+
+    &-secondary {
+        color: $secondary !important;
+    }
+
+    &-danger {
+        color: $danger !important;
+    }
+
+    &-success {
+        color: $success !important;
+    }
+
+    &-warning {
+        color: $warning !important;
+    }
+}
+
+.btn-outline {
+    background-color: $mainLayoutColor;
+    border: 2px solid;
+}
+
+a {
+    &.navbar-brand {
+        color: $primary !important;
+    }
+
+    color: $primary;
+
+    &:hover {
+        text-decoration: none !important;
+        color: $danger;
+    }
+
+    &.btn {
+        color: white;
+    }
+}
+
+.card {
+    border: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.08) !important;
+}
+
+.btn {
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+
+.form-control {
+    border-radius: 0px !important;
+
+    &:focus {
+        outline: none !important;
+        border: .5px solid $primary;
+        box-shadow: 0 0 5px $primary;
+    }
+}
+
+nav {
+    border: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    min-height: 80vh;
+}
